@@ -28,7 +28,8 @@
         </svg>
         <div>
           <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <nav class="fixed flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global"
+            style="background-color: white;">
               <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div class="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
@@ -38,9 +39,9 @@
                   </a>
                 </div>
               </div>
-              <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <div class="md:block md:ml-10 md:pr-4 md:space-x-8">
                 <a href="#spnName" class="font-medium text-gray-500 hover:text-gray-900">About</a>
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Projects</a>
+                <a href="#music" class="font-medium text-gray-500 hover:text-gray-900">Projects</a>
                 <a href="#contac" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
               </div>
             </nav>
@@ -87,7 +88,7 @@
     </div>
   </div>
 
-  <div class="bg-white">
+  <div class="bg-white" id="music">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Music list</h2>
       <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="myVideos">
@@ -102,7 +103,7 @@
         contenido como la imagen, datos de nombre y los proyectos creados en github, ademas se consume el api de youtube
         para cargar el carusel de videos, esta disponible en el siguiente repositorio publico : <a
           class="italic font-bold text-red-600" href="https://github.com/andresflorez0799/landingjs"
-          target="_blank">async-landing</a></h2>
+          target="_blank">curiculum</a></h2>
     </div>
   </div>
   <div class="bg-gray-50">
@@ -122,7 +123,7 @@
 
   <!--<script src="../dist/sql-wasm.js"></script>-->
   <script src="./assets/main.js"></script>
-  <!--<script src="indexdb.js"></script>-->
+  <script src="./assets/maindb.js"></script>
 </body>
 
 </html>
