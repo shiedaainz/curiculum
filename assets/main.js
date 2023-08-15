@@ -21,7 +21,6 @@ const API_YOUTUBE = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCPt5
                 imgProfile.forEach(x => x.src = data.avatar_url);
                 spnName.innerHTML = data.name;
                 spnFollowme.innerHTML = `@${data.url.split('/').pop()}`;
-                description.innerHTML = data.bio;
 
                 return data;
             });
